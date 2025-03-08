@@ -1,3 +1,16 @@
+import os, torch
+from datetime import datetime
+
+# WandB
+wandb_project= "llm1"    
+wandb_run_name= "llm1-"+datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
+
+# Paths
+os.makedirs("data", exist_ok=True)
+tokenizer_model_file_path= os.path.join("data", "wiki_tokenizer.model")
+wiki_path= os.path.join("data", "wiki.txt")
+encoded_data_path= os.path.join("data", "encoded_data.pt")
+
 # Architecture Parameters
 batch_size= 32 # 8 to 128
 context= 512 # context length
@@ -22,8 +35,9 @@ checkpoint_fn= "latest.pt" # File name for saving checkpoints
 checkpoint_load_fn= "latest.pt" # File name for loading checkpoints
 dtype= torch.bfloat16
 load_pretrained= True
+start_iteration=0
+best_val_loss= float('inf')
 
 # Mode
 inference= False
 device= "mps" if torch.backends.mps.is_available() else "cpu"
-print(device)
