@@ -1,0 +1,8 @@
+ipdb
+tqdm
+sentencepiece
+jupyter
+wandb
+transformers
+datasets
+python-dotenv

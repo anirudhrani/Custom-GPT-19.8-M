@@ -1,0 +1,13 @@
+llm_train
+test_wiki_tokenizer.model
+test_wiki_tokenizer.vocab
+train_tokenizer.ipynb
+.env
+wandb
+data
+models
+encoded_data.pt
+wiki_tokenizer.vocab
+LLMScratch.ipynb
+llm_alignment.ipynb
+attention_mech.ipynb
