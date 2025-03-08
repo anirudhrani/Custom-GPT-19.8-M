@@ -17,17 +17,18 @@ This repository contains the code and model weights for a custom GPT model devel
 
 ## Repository Structure
 
-.  
-├── src/  
-│    ├── config.py  
-│    ├── gpt.py  
-│    ├── layers.py  
-│    ├── load_data.py  
-│    ├── utils.py  
-│    ├── train.py  
-│    └── requirements.txt  
-├── .gitignore  
-└── README.md                
+    .  
+    ├── metrics
+    ├── src  
+    │   ├── config.py  
+    │   ├── gpt.py  
+    │   ├── layers.py  
+    │   ├── load_data.py  
+    │   └── utils.py      
+    ├── train.py
+    ├── requirements.txt
+    ├── .gitignore  
+    └── README.md                
 
 ## Installation
 
